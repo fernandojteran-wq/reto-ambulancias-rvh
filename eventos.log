@@ -1,0 +1,191 @@
+ Retrying in 1 seconds
+***Starting server on port 38225 ***
+Loading net-file from 'cuenca_ciudad.net.xml' ... done (209ms).
+Loading additional-files from 'vtypes.add.xml' ... done (0ms).
+Loading route-files incrementally from 'fondo_car.rou.xml'
+Loading route-files incrementally from 'fondo_bus.rou.xml'
+Loading route-files incrementally from 'fondo_moto.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 0.00.
+
+Hospital     Tipo     Arista              Pos (m) Carril Dist (m)  Calle
+VCM          publico  208782596#0           201.7      0     80.9  Avenida del Paraíso
+IESS_JCA     publico  47198324#0            124.9      2    124.2  Circunvalación Sur
+MILITAR      publico  334948974#0           198.3      1      9.2  Avenida 12 de Abril
+MUNI_PAT     publico  378364650#0            88.5      0    135.6  Via Checa Chiquintad
+MUNI_VALLE   publico  -171302162#22          88.2      0      8.3  Camino Viejo
+MONTE_SINAI  privado  269103111#2           139.5      0     38.0  Avenida Fray Vicente Solano
+DEL_RIO      privado  40972441#0              6.5      0    119.5  Avenida de las Américas
+
+Stock inicial de ambulancias:
+  VCM          (publico): 3 -> ['U01', 'U02', 'U03']
+  IESS_JCA     (publico): 1 -> ['U04']
+  MILITAR      (publico): 1 -> ['U05']
+  MUNI_PAT     (publico): 3 -> ['U06', 'U07', 'U08']
+  MUNI_VALLE   (publico): 2 -> ['U09', 'U10']
+  MONTE_SINAI  (privado): 0 -> []
+  DEL_RIO      (privado): 0 -> []
+
+Agenda de accidentes (s): [638, 760, 2099, 2248, 2744, 3714, 3937, 4437, 5620, 5767, 8201, 8710, 8817, 9724, 9777]
+[120] Despacho de prueba U01: VCM -> IESS_JCA, 27 aristas, 5135 m, travelTime estimado 233.4 s
+[352] U01 llegó a IESS_JCA: tiempo real 231 s vs travelTime 233.4 s (diferencia -2 s, retraso de inserción 1 s)
+[   638] Intento de choque (agenda t=638): moto nueva moto_acc01 -> bus11 en 211405705#6
+[   645] ACCIDENTE ACC_01 (collision): moto_acc01 -> bus11 en 211405705#6_0 (Via Monay Baguanchi- Paccha), lon/lat -78.961467, -2.913712
+[   645] ACC_01: DESPACHO U09 desde MUNI_VALLE, ETA 108 s, espera 0 s
+[   731] ACC_01: LLEGADA de U09 (a 42 m), respuesta 86 s (ETA 108 s), total desde el accidente 86 s
+[   760] Intento de choque (agenda t=760): moto nueva moto_acc02 -> bus14 en 334968591#0
+[   764] ACCIDENTE ACC_02 (collision): moto_acc02 -> bus14 en 334968591#0_1 (Calle Larga), lon/lat -78.998028, -2.905263
+[   764] ACC_02: DESPACHO U02 desde VCM, ETA 130 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (123 s)
+[   830] Colisión de fondo bus23 (bus) -> car91 (car) en :413646862_7_0: retirados
+[   851] ACC_01: fin de atención, U09 vuelve a MUNI_VALLE (travelTime 234 s) — mismo hospital
+[   884] ACC_02: LLEGADA de U02 (a 41 m), respuesta 120 s (ETA 130 s), total desde el accidente 120 s
+[  1004] ACC_02: fin de atención, U02 vuelve a MILITAR (travelTime 155 s) — DISTINTO del de origen VCM
+[  1073] ACC_01: U09 llegó a MUNI_VALLE, misión 428 s; cola de MUNI_VALLE: ['U10', 'U09']
+[  1184] ACC_02: U02 llegó a MILITAR, misión 420 s; cola de MILITAR: ['U05', 'U02']
+[  1726] Colisión de fondo moto142 (moto) -> car396 (car) en :8370180733_3_1: retirados
+[  2099] Intento de choque (agenda t=2099): moto nueva moto_acc03 -> bus48 en 65089261#0
+[  2109] ACCIDENTE ACC_03 (collision): moto_acc03 -> bus48 en 65089261#0_0 (Avenida de las Américas), lon/lat -79.014182, -2.888835
+[  2109] ACC_03: DESPACHO U03 desde VCM, ETA 338 s, espera 0 s
+[  2248] Intento de choque (agenda t=2248): moto nueva moto_acc04 -> bus55 en 400017953#1
+[  2340] Intento moto_acc04 -> bus55 abortado (no lo alcanzó en 90 s); se reprograma en t=2400
+[  2392] Colisión de fondo car551 (car) -> bus65 (bus) en :601481960_2_0: retirados
+[  2400] Intento de choque (agenda t=2248): moto nueva moto_acc05 -> bus64 en 42453885
+[  2407] ACCIDENTE ACC_04 (collision): moto_acc05 -> bus64 en 42453885_0 (Avenida 12 de Abril), lon/lat -79.000815, -2.905538
+[  2407] ACC_04: DESPACHO U05 desde MILITAR, ETA 146 s, espera 0 s | antes no pudieron: VCM sin stock (100 s); MONTE_SINAI sin stock (109 s)
+[  2420] ACC_03: LLEGADA de U03 (a 45 m), respuesta 311 s (ETA 338 s), total desde el accidente 311 s
+[  2531] ACC_04: LLEGADA de U05 (a 44 m), respuesta 124 s (ETA 146 s), total desde el accidente 124 s
+[  2540] ACC_03: fin de atención, U03 vuelve a MONTE_SINAI (travelTime 316 s) — DISTINTO del de origen VCM
+[  2651] ACC_04: fin de atención, U05 vuelve a MILITAR (travelTime 67 s) — mismo hospital
+[  2719] ACC_04: U05 llegó a MILITAR, misión 312 s; cola de MILITAR: ['U02', 'U05']
+[  2744] Intento de choque (agenda t=2744): moto nueva moto_acc06 -> bus62 en 730419288#2
+[  2762] ACCIDENTE ACC_05 (collision): moto_acc06 -> bus62 en 552179428#0_0 (Circunvalación Sur), lon/lat -78.971868, -2.900405
+[  2762] ACC_05: DESPACHO U10 desde MUNI_VALLE, ETA 273 s, espera 0 s | antes no pudieron: VCM sin stock (188 s)
+[  2967] ACC_03: U03 llegó a MONTE_SINAI, misión 858 s; cola de MONTE_SINAI: ['U03']
+[  3095] ACC_05: LLEGADA de U10 (a 39 m), respuesta 333 s (ETA 273 s), total desde el accidente 333 s
+[  3215] ACC_05: fin de atención, U10 vuelve a IESS_JCA (travelTime 52 s) — DISTINTO del de origen MUNI_VALLE
+[  3272] ACC_05: U10 llegó a IESS_JCA, misión 510 s; cola de IESS_JCA: ['U04', 'U01', 'U10']
+[  3695] Colisión de fondo bus95 (bus) -> car899 (car) en :413646862_7_0: retirados
+[  3714] Intento de choque (agenda t=3714): moto nueva moto_acc07 -> bus88 en 534903533#2
+[  3751] ACCIDENTE ACC_06 (collision): moto_acc07 -> bus88 en 897096371#0_0 (Camino a Turi), lon/lat -79.008746, -2.921407
+[  3751] ACC_06: DESPACHO U03 desde MONTE_SINAI, ETA 270 s, espera 0 s
+[  3937] Intento de choque (agenda t=3937): moto nueva moto_acc08 -> bus107 en 542406710
+[  3944] ACCIDENTE ACC_07 (collision): moto_acc08 -> bus107 en 542406710_0 (Avenida 10 de Agosto), lon/lat -79.015113, -2.909112
+[  3944] ACC_07: DESPACHO U02 desde MILITAR, ETA 183 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (129 s)
+[  3967] Colisión de fondo car1015 (car) -> car1295 (car) en :cluster_347404234_766497521_6_0: retirados
+[  4094] ACC_06: LLEGADA de U03 (a 48 m), respuesta 343 s (ETA 270 s), total desde el accidente 343 s
+[  4154] ACC_07: LLEGADA de U02 (a 33 m), respuesta 210 s (ETA 183 s), total desde el accidente 210 s
+[  4214] ACC_06: fin de atención, U03 vuelve a MONTE_SINAI (travelTime 173 s) — mismo hospital
+[  4274] ACC_07: fin de atención, U02 vuelve a MONTE_SINAI (travelTime 81 s) — DISTINTO del de origen MILITAR
+[  4386] ACC_07: U02 llegó a MONTE_SINAI, misión 442 s; cola de MONTE_SINAI: ['U02']
+[  4437] Intento de choque (agenda t=4437): moto nueva moto_acc09 -> bus102 en -50552343#6
+[  4437] ACC_06: U03 llegó a MONTE_SINAI, misión 686 s; cola de MONTE_SINAI: ['U02', 'U03']
+[  4451] ACCIDENTE ACC_08 (junction): moto_acc09 -> bus102 en :cluster_4101930780_4101930783_5_0 (Avenida Del Toril), lon/lat -78.983357, -2.869233
+[  4451] ACC_08: DESPACHO U06 desde MUNI_PAT, ETA 121 s, espera 0 s
+[  4597] ACC_08: LLEGADA de U06 (a 43 m), respuesta 146 s (ETA 121 s), total desde el accidente 146 s
+[  4717] ACC_08: fin de atención, U06 vuelve a MUNI_PAT (travelTime 61 s) — mismo hospital
+[  4791] ACC_08: U06 llegó a MUNI_PAT, misión 340 s; cola de MUNI_PAT: ['U07', 'U08', 'U06']
+[  4872] Colisión de fondo car1432 (car) -> car1577 (car) en :8370180733_1_0: retirados
+[  5620] Intento de choque (agenda t=5620): moto nueva moto_acc10 -> bus139 en 542421943
+[  5630] ACCIDENTE ACC_09 (collision): moto_acc10 -> bus139 en 876405819#0_1 (Avenida de las Américas), lon/lat -78.983717, -2.881096
+[  5630] ACC_09: DESPACHO U07 desde MUNI_PAT, ETA 205 s, espera 0 s | antes no pudieron: DEL_RIO sin stock (173 s)
+[  5767] Intento de choque (agenda t=5767): moto nueva moto_acc11 -> bus157 en 48503912#0
+[  5771] ACCIDENTE ACC_10 (collision): moto_acc11 -> bus157 en 48503912#0_0 (José Carrasco Arteaga), lon/lat -78.971668, -2.898502
+[  5771] ACC_10: DESPACHO U02 desde MONTE_SINAI, ETA 323 s, espera 0 s | antes no pudieron: MUNI_VALLE rechazo (p_sin) (139 s); VCM sin stock (211 s)
+[  5994] ACC_09: LLEGADA de U07 (a 43 m), respuesta 364 s (ETA 205 s), total desde el accidente 364 s
+[  6114] ACC_09: fin de atención, U07 vuelve a MUNI_PAT (travelTime 128 s) — mismo hospital
+[  6132] ACC_10: LLEGADA de U02 (detenida en la arista del accidente), respuesta 361 s (ETA 323 s), total desde el accidente 361 s
+[  6252] ACC_10: fin de atención, U02 vuelve a IESS_JCA (travelTime 230 s) — DISTINTO del de origen MONTE_SINAI
+[  6280] ACC_09: U07 llegó a MUNI_PAT, misión 650 s; cola de MUNI_PAT: ['U08', 'U06', 'U07']
+[  6590] ACC_10: U02 llegó a IESS_JCA, misión 819 s; cola de IESS_JCA: ['U04', 'U01', 'U10', 'U02']
+[  6847] Colisión de fondo car2076 (car) -> car2251 (car) en :cluster_347404234_766497521_6_0: retirados
+[  8201] Intento de choque (agenda t=8201): moto nueva moto_acc12 -> bus221 en 42207945#0
+[  8208] ACCIDENTE ACC_11 (collision): moto_acc12 -> bus221 en 42207945#0_0 (Avenida Turuhuayco), lon/lat -78.988042, -2.885240
+[  8208] ACC_11: DESPACHO U08 desde MUNI_PAT, ETA 210 s, espera 0 s | antes no pudieron: DEL_RIO sin stock (202 s)
+[  8488] ACC_11: LLEGADA de U08 (a 49 m), respuesta 280 s (ETA 210 s), total desde el accidente 280 s
+[  8608] ACC_11: fin de atención, U08 vuelve a MUNI_PAT (travelTime 181 s) — mismo hospital
+[  8710] Intento de choque (agenda t=8710): moto nueva moto_acc13 -> bus239 en 542393635#0
+[  8717] ACCIDENTE ACC_12 (collision): moto_acc13 -> bus239 en 542393635#0_1 (Avenida Remigio Crespo Toral), lon/lat -79.009351, -2.906458
+[  8717] ACC_12: DESPACHO U05 desde MILITAR, ETA 181 s, espera 0 s | antes no pudieron: MONTE_SINAI rechazo (p_sin) (127 s)
+[  8817] Intento de choque (agenda t=8817): moto nueva moto_acc14 -> bus237 en 430870741#0
+[  8824] ACCIDENTE ACC_13 (collision): moto_acc14 -> bus237 en 430870741#0_0 (Avenida España), lon/lat -78.989659, -2.890889
+[  8824] ACC_13: DESPACHO U03 desde MONTE_SINAI, ETA 264 s, espera 0 s | antes no pudieron: VCM sin stock (212 s)
+[  8887] ACC_12: LLEGADA de U05 (a 37 m), respuesta 170 s (ETA 181 s), total desde el accidente 170 s
+[  8888] ACC_11: U08 llegó a MUNI_PAT, misión 680 s; cola de MUNI_PAT: ['U06', 'U07', 'U08']
+[  9007] ACC_12: fin de atención, U05 vuelve a MONTE_SINAI (travelTime 66 s) — DISTINTO del de origen MILITAR
+[  9078] ACC_12: U05 llegó a MONTE_SINAI, misión 361 s; cola de MONTE_SINAI: ['U05']
+[  9137] ACC_13: LLEGADA de U03 (a 47 m), respuesta 313 s (ETA 264 s), total desde el accidente 313 s
+[  9257] ACC_13: fin de atención, U03 vuelve a MUNI_PAT (travelTime 247 s) — DISTINTO del de origen MONTE_SINAI
+[  9655] ACC_13: U03 llegó a MUNI_PAT, misión 831 s; cola de MUNI_PAT: ['U06', 'U07', 'U08', 'U03']
+[  9724] Intento de choque (agenda t=9724): moto existente moto775 -> bus259 en 301926474#4
+[  9735] ACCIDENTE ACC_14 (collision): moto775 -> bus259 en 876405820_0 (Avenida de las Américas), lon/lat -78.986174, -2.881959
+[  9735] ACC_14: DESPACHO U06 desde MUNI_PAT, ETA 206 s, espera 0 s | antes no pudieron: DEL_RIO sin stock (173 s)
+[  9777] Intento de choque (agenda t=9777): moto nueva moto_acc16 -> bus270 en 895065310
+[  9784] ACCIDENTE ACC_15 (collision): moto_acc16 -> bus270 en 895065310_1 (Avenida Fray Vicente Solano), lon/lat -79.008542, -2.911394
+[  9784] ACC_15: DESPACHO U05 desde MONTE_SINAI, ETA 84 s, espera 0 s
+[  9864] ACC_15: LLEGADA de U05 (a 42 m), respuesta 80 s (ETA 84 s), total desde el accidente 80 s
+[  9984] ACC_15: fin de atención, U05 vuelve a MONTE_SINAI (travelTime 39 s) — mismo hospital
+[ 10000] ACC_14: LLEGADA de U06 (a 34 m), respuesta 265 s (ETA 206 s), total desde el accidente 265 s
+[ 10017] ACC_15: U05 llegó a MONTE_SINAI, misión 233 s; cola de MONTE_SINAI: ['U05']
+[ 10120] ACC_14: fin de atención, U06 vuelve a MUNI_PAT (travelTime 157 s) — mismo hospital
+[ 10306] ACC_14: U06 llegó a MUNI_PAT, misión 571 s; cola de MUNI_PAT: ['U07', 'U08', 'U03', 'U06']
+[ 10365] Colisión de fondo car3435 (car) -> car3304 (car) en :8370180733_3_1: retirados
+
+Accidentes bus-moto: 15 (por hora: [5, 5, 5]), en 15 aristas distintas
+Intentos abortados y reprogramados: 1; vehículos retirados por colisiones de fondo: 16
+
+Acc     t_acc estado     origen       espera  resp   ETA retorno      misión  llegada
+ACC_01    645 cerrado    MUNI_VALLE        0    86   108 MUNI_VALLE      428  a 42 m
+ACC_02    764 cerrado    VCM               0   120   130 MILITAR         420  a 41 m
+ACC_03   2109 cerrado    VCM               0   311   338 MONTE_SINAI     858  a 45 m
+ACC_04   2407 cerrado    MILITAR           0   124   146 MILITAR         312  a 44 m
+ACC_05   2762 cerrado    MUNI_VALLE        0   333   273 IESS_JCA        510  a 39 m
+ACC_06   3751 cerrado    MONTE_SINAI       0   343   270 MONTE_SINAI     686  a 48 m
+ACC_07   3944 cerrado    MILITAR           0   210   183 MONTE_SINAI     442  a 33 m
+ACC_08   4451 cerrado    MUNI_PAT          0   146   121 MUNI_PAT        340  a 43 m
+ACC_09   5630 cerrado    MUNI_PAT          0   364   205 MUNI_PAT        650  a 43 m
+ACC_10   5771 cerrado    MONTE_SINAI       0   361   323 IESS_JCA        819  detenida en la arista del accidente
+ACC_11   8208 cerrado    MUNI_PAT          0   280   210 MUNI_PAT        680  a 49 m
+ACC_12   8717 cerrado    MILITAR           0   170   181 MONTE_SINAI     361  a 37 m
+ACC_13   8824 cerrado    MONTE_SINAI       0   313   264 MUNI_PAT        831  a 47 m
+ACC_14   9735 cerrado    MUNI_PAT          0   265   206 MUNI_PAT        571  a 34 m
+ACC_15   9784 cerrado    MONTE_SINAI       0    80    84 MONTE_SINAI     233  a 42 m
+
+Retornos a un hospital distinto del de origen: 7 de 15
+
+Hospital     tipo     ini fin desp ret rech sin ocupado(s)   util
+VCM          publico    3   0    2   0    0   4       1278   3.9%
+IESS_JCA     publico    1   4    0   2    0   0          0   0.0%
+MILITAR      publico    1   0    3   2    0   0       1115  10.3%
+MUNI_PAT     publico    3   4    4   5    0   0       2241   6.9%
+MUNI_VALLE   publico    2   1    2   1    1   0        938   4.3%
+MONTE_SINAI  privado    0   1    4   5    1   3       2569    n/a
+DEL_RIO      privado    0   0    0   0    0   3          0    n/a
+
+Teleports totales: 0
+Stock final: {'VCM': [], 'IESS_JCA': ['U04', 'U01', 'U10', 'U02'], 'MILITAR': [], 'MUNI_PAT': ['U07', 'U08', 'U03', 'U06'], 'MUNI_VALLE': ['U09'], 'MONTE_SINAI': ['U05'], 'DEL_RIO': []}
+CSV escritos en salida/: accidentes.csv, hospitales.csv, stock.csv
+Simulation ended at time: 12600.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 40.04s
+ TraCI-Duration: 10.13s
+ Real time factor: 314.717
+ UPS: 68674.767709
+Vehicles:
+ Inserted: 4831
+ Running: 3
+ Waiting: 0
+ Teleports: 0 (Collisions: 23)
+ Emergency Stops: 84
+ Emergency Braking: 31
+Statistics (avg of 4828):
+ RouteLength: 6108.60
+ Speed: 11.41
+ Duration: 568.22
+ WaitingTime: 108.15
+ TimeLoss: 174.43
+ DepartDelay: 0.17
+DijkstraRouter answered 3205 queries and explored 193.18 edges on average.
+DijkstraRouter spent 0.33s answering queries (0.10ms on average).
+DijkstraRouter answered 6742 queries and explored 450.77 edges on average.
+DijkstraRouter spent 2.13s answering queries (0.32ms on average).

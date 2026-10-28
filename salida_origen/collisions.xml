@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-28T22:38:10.694482+00:00 by Eclipse SUMO sumo 1.28.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="cuenca_ciudad.net.xml"/>
+        <route-files value="fondo_car.rou.xml,fondo_bus.rou.xml,fondo_moto.rou.xml"/>
+        <additional-files value="vtypes.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="salida_origen/tripinfo.xml"/>
+        <collision-output value="salida_origen/collisions.xml"/>
+        <statistic-output value="salida_origen/stats.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="12600"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-junction-blocker value="60"/>
+        <ignore-route-errors value="true"/>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <time-to-teleport value="-1"/>
+        <time-to-teleport.disconnected value="-1"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.probability value="0.3"/>
+        <device.rerouting.period value="120"/>
+    </routing>
+
+    <report>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="35387"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+</sumoConfiguration>
+-->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+    <collision time="644.00" type="collision" lane="211405705#6_0" pos="573.82" collider="moto_acc01" victim="bus11" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.84" colliderFront="8271.95,2959.13" colliderBack="8271.65,2956.95" victimFront="8273.22,2968.50" victimBack="8271.60,2956.61"/>
+    <collision time="763.00" type="collision" lane="334968591#0_1" pos="90.83" collider="moto_acc02" victim="bus14" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="8.23" colliderFront="4198.00,3913.97" colliderBack="4195.92,3914.67" victimFront="4209.27,3910.18" victimBack="4197.90,3914.01"/>
+    <collision time="829.00" type="junction" lane=":413646862_7_0" pos="1.20" collider="bus23" victim="car91" colliderType="bus" victimType="car" colliderSpeed="1.20" victimSpeed="0.00" colliderFront="4430.74,5480.37" colliderBack="4420.50,5480.11" victimFront="4427.53,5481.46" victimBack="4431.17,5484.88"/>
+    <collision time="1725.00" type="junction" lane=":8370180733_3_1" pos="30.46" collider="moto142" victim="car396" colliderType="moto" victimType="car" colliderSpeed="4.79" victimSpeed="0.00" colliderFront="6105.58,6863.92" colliderBack="6104.96,6866.07" victimFront="6105.65,6866.40" victimBack="6108.28,6862.16"/>
+    <collision time="2102.00" type="collision" lane="552440202_0" pos="2.56" collider="moto_acc03" victim="bus50" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="9.60" colliderFront="5600.07,3018.04" colliderBack="5601.57,3019.65" victimFront="5592.53,3009.95" victimBack="5600.72,3018.73"/>
+    <collision time="2254.00" type="collision" lane="894536405_0" pos="244.80" collider="moto_acc04" victim="bus54" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.55" colliderFront="3143.18,5843.67" colliderBack="3141.00,5844.00" victimFront="3151.95,5842.35" victimBack="3140.08,5844.14"/>
+    <collision time="2747.00" type="collision" lane="42143919_0" pos="576.58" collider="moto_acc05" victim="bus66" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="8.12" colliderFront="3560.12,4278.19" colliderBack="3558.23,4279.32" victimFront="3570.29,4272.39" victimBack="3559.88,4278.34"/>
+    <collision time="2800.00" type="junction" lane=":347652056_0_1" pos="4.59" collider="car817" victim="car932" colliderType="car" victimType="car" colliderSpeed="5.03" victimSpeed="4.91" colliderFront="2829.43,4661.49" colliderBack="2828.04,4657.23" victimFront="2831.17,4662.79" victimBack="2826.39,4661.70"/>
+    <collision time="3694.00" type="junction" lane=":413646862_7_0" pos="2.60" collider="bus95" victim="moto229" colliderType="bus" victimType="moto" colliderSpeed="2.67" victimSpeed="0.14" colliderFront="4431.58,5481.49" colliderBack="4421.65,5479.33" victimFront="4427.54,5481.48" victimBack="4429.16,5482.96"/>
+    <collision time="3751.00" type="collision" lane="897096371#0_0" pos="36.33" collider="moto_acc06" victim="bus88" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="11.10" colliderFront="3010.72,2128.00" colliderBack="3012.80,2127.28" victimFront="3003.61,2130.50" victimBack="3014.94,2126.53"/>
+    <collision time="3941.00" type="collision" lane="894536406_0" pos="989.10" collider="moto_acc07" victim="car1182" colliderType="moto" victimType="car" colliderSpeed="22.00" victimSpeed="14.89" colliderFront="3779.24,6193.50" colliderBack="3777.18,6194.25" victimFront="3779.60,6193.36" victimBack="3774.92,6195.08"/>
+    <collision time="4009.00" type="collision" lane="42207972_0" pos="70.58" collider="moto_acc08" victim="bus97" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="4.62" colliderFront="7876.51,5602.57" colliderBack="7878.01,5604.18" victimFront="7872.32,5598.34" victimBack="7880.64,5606.99"/>
+    <collision time="4652.00" type="collision" lane="42207971_0" pos="138.06" collider="moto_acc11" victim="bus124" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="0.00" colliderFront="3864.17,2717.63" colliderBack="3863.79,2715.47" victimFront="3865.06,2722.65" victimBack="3862.97,2710.84"/>
+    <collision time="4950.00" type="junction" lane=":639837049_2_0" pos="0.05" collider="car1369" victim="bus118" colliderType="car" victimType="bus" colliderSpeed="0.15" victimSpeed="7.20" colliderFront="6643.31,6723.03" colliderBack="6647.28,6719.99" victimFront="6643.39,6718.95" victimBack="6641.10,6729.00"/>
+    <collision time="5625.00" type="junction" lane=":5334360579_0_1" pos="10.59" collider="moto_acc12" victim="bus149" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="9.23" colliderFront="3055.21,3273.98" colliderBack="3055.91,3271.73" victimFront="3054.97,3274.76" victimBack="3063.51,3265.30"/>
+    <collision time="5773.00" type="collision" lane="815723563#0_1" pos="183.37" collider="moto_acc13" victim="bus156" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.61" colliderFront="2804.29,2305.04" colliderBack="2806.42,2305.57" victimFront="2795.62,2302.88" victimBack="2807.26,2305.78"/>
+    <collision time="7877.00" type="junction" lane=":413646862_1_0" pos="20.91" collider="bus184" victim="moto651" colliderType="bus" victimType="moto" colliderSpeed="3.06" victimSpeed="0.00" colliderFront="4426.70,5476.29" colliderBack="4431.78,5485.50" victimFront="4431.65,5481.59" victimBack="4430.33,5479.82"/>
+    <collision time="8207.00" type="collision" lane="542393800#0_1" pos="23.20" collider="moto_acc14" victim="bus206" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.80" colliderFront="2939.30,3791.91" colliderBack="2941.31,3791.03" victimFront="2930.94,3795.56" victimBack="2941.95,3790.76"/>
+    <collision time="8716.00" type="collision" lane="542406710_0" pos="321.01" collider="moto_acc15" victim="bus236" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.71" colliderFront="2424.41,3451.08" colliderBack="2422.34,3451.81" victimFront="2433.14,3448.01" victimBack="2421.82,3451.99"/>
+    <collision time="8823.00" type="collision" lane="-542537659#11_0" pos="497.53" collider="moto_acc16" victim="bus230" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.85" colliderFront="1392.42,3665.02" colliderBack="1394.58,3664.57" victimFront="1383.58,3667.00" victimBack="1395.30,3664.41"/>
+    <collision time="9730.00" type="collision" lane="-40668082#9_0" pos="490.01" collider="moto_acc17" victim="bus267" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.60" colliderFront="1407.19,5475.86" colliderBack="1409.36,5475.49" victimFront="1398.46,5477.34" victimBack="1410.29,5475.34"/>
+    <collision time="9783.00" type="collision" lane="548294140_1" pos="250.76" collider="moto_acc18" victim="bus269" colliderType="moto" victimType="bus" colliderSpeed="22.00" victimSpeed="13.73" colliderFront="1606.16,4747.56" colliderBack="1603.98,4747.85" victimFront="1615.06,4746.36" victimBack="1603.16,4747.96"/>
+    <collision time="10364.00" type="junction" lane=":8370180733_3_1" pos="27.69" collider="car3435" victim="car3304" colliderType="car" victimType="car" colliderSpeed="5.92" victimSpeed="0.30" colliderFront="6104.80,6866.62" colliderBack="6103.40,6871.49" victimFront="6105.06,6868.44" victimBack="6107.57,6864.13"/>
+</collisions>

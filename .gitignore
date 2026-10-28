@@ -1,0 +1,16 @@
+# Entorno instalado con pip --target (759 MB) y teselas OSM descargadas (62 MB)
+.pylib/
+osm/
+__pycache__/
+
+# Volcados de memoria de procesos caídos y archivos sueltos
+core.*
+IESS_JCA,
+
+# Auxiliares de LaTeX (se conserva informe.tex y informe.pdf)
+informe/*.aux
+informe/*.log
+informe/*.out
+informe/*.fls
+informe/*.fdb_latexmk
+informe/build.log

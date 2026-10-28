@@ -1,0 +1,119 @@
+ Retrying in 1 seconds
+***Starting server on port 35883 ***
+Loading net-file from 'cuenca_ciudad.net.xml' ... done (190ms).
+Loading additional-files from 'vtypes.add.xml' ... done (0ms).
+Loading route-files incrementally from 'fondo_car.rou.xml'
+Loading route-files incrementally from 'fondo_bus.rou.xml'
+Loading route-files incrementally from 'fondo_moto.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 0.00.
+
+Hospital     Tipo     Arista              Pos (m) Carril Dist (m)  Calle
+VCM          publico  208782596#0           201.7      0     80.9  Avenida del Paraíso
+IESS_JCA     publico  47198324#0            124.9      2    124.2  Circunvalación Sur
+MILITAR      publico  334948974#0           198.3      1      9.2  Avenida 12 de Abril
+MUNI_PAT     publico  378364650#0            88.5      0    135.6  Via Checa Chiquintad
+MUNI_VALLE   publico  -171302162#22          88.2      0      8.3  Camino Viejo
+MONTE_SINAI  privado  269103111#2           139.5      0     38.0  Avenida Fray Vicente Solano
+DEL_RIO      privado  40972441#0              6.5      0    119.5  Avenida de las Américas
+
+Stock inicial de ambulancias:
+  VCM          (publico): 3 -> ['U01', 'U02', 'U03']
+  IESS_JCA     (publico): 1 -> ['U04']
+  MILITAR      (publico): 1 -> ['U05']
+  MUNI_PAT     (publico): 3 -> ['U06', 'U07', 'U08']
+  MUNI_VALLE   (publico): 2 -> ['U09', 'U10']
+  MONTE_SINAI  (privado): 0 -> []
+  DEL_RIO      (privado): 0 -> []
+
+Agenda de accidentes (s): [638, 760, 2099, 2248, 2744, 3714, 3937, 4437, 5620, 5767, 8201, 8710, 8817, 9724, 9777]
+[120] Despacho de prueba U01: VCM -> IESS_JCA, 27 aristas, 5135 m, travelTime estimado 233.4 s
+[352] U01 llegó a IESS_JCA: tiempo real 231 s vs travelTime 233.4 s (diferencia -2 s, retraso de inserción 1 s)
+[   638] Intento de choque (agenda t=638): moto nueva moto_acc01 -> bus11 en 211405705#6
+[   645] ACCIDENTE ACC_01 (collision): moto_acc01 -> bus11 en 211405705#6_0 (Via Monay Baguanchi- Paccha), lon/lat -78.961467, -2.913712
+[   760] Intento de choque (agenda t=760): moto nueva moto_acc02 -> bus14 en 334968591#0
+[   764] ACCIDENTE ACC_02 (collision): moto_acc02 -> bus14 en 334968591#0_1 (Calle Larga), lon/lat -78.998024, -2.905264
+[   830] Colisión de fondo bus23 (bus) -> car91 (car) en :413646862_7_0: retirados
+[  1726] Colisión de fondo moto142 (moto) -> car396 (car) en :8370180733_3_1: retirados
+[  2099] Intento de choque (agenda t=2099): moto nueva moto_acc03 -> bus57 en 46227734#2
+[  2103] ACCIDENTE ACC_03 (collision): moto_acc03 -> bus57 en 46227734#2_0 (Avenida Loja), lon/lat -79.025958, -2.905219
+[  2248] Intento de choque (agenda t=2248): moto nueva moto_acc04 -> bus56 en 605352054#0
+[  2254] ACCIDENTE ACC_04 (junction): moto_acc04 -> bus56 en :cluster_4913080725_7426923494_3_0 (Avenida Guapondelig), lon/lat -78.989816, -2.895558
+[  2744] Intento de choque (agenda t=2744): moto nueva moto_acc05 -> bus69 en 542421943
+[  2747] ACCIDENTE ACC_05 (collision): moto_acc05 -> bus69 en 542421943_0 (Avenida de las Américas), lon/lat -78.984944, -2.881834
+[  2755] Colisión de fondo car822 (car) -> car880 (car) en :1824529314_3_0: retirados
+[  3695] Colisión de fondo bus95 (bus) -> car1053 (car) en :413646862_7_0: retirados
+[  3714] Intento de choque (agenda t=3714): moto nueva moto_acc06 -> bus88 en 534903533#2
+[  3752] ACCIDENTE ACC_06 (collision): moto_acc06 -> bus88 en 897096371#0_0 (Camino a Turi), lon/lat -79.008840, -2.921374
+[  3937] Intento de choque (agenda t=3937): moto nueva moto_acc07 -> bus103 en -48202930
+[  3943] Colisión de fondo moto_acc07 (moto) -> car1094 (car) en -48202930_0: retirados
+[  3943] Intento moto_acc07 -> bus103 abortado (la moto o el bus ya no están disponibles); se reprograma en t=4003
+[  4003] Intento de choque (agenda t=3937): moto nueva moto_acc08 -> bus101 en 45393819#6
+[  4008] ACCIDENTE ACC_07 (collision): moto_acc08 -> bus101 en 45393819#6_1 (Avenida 12 de Octubre), lon/lat -79.023314, -2.917589
+[  4437] Intento de choque (agenda t=4437): moto nueva moto_acc09 -> bus123 en 202044145#3
+[  4445] ACCIDENTE ACC_08 (junction): moto_acc09 -> bus123 en :639837149_3_1 (Paseo Rio Machangara), lon/lat -78.976770, -2.873698
+[  5227] Colisión de fondo car1391 (car) -> car1704 (car) en :cluster_347404234_766497521_6_0: retirados
+[  5620] Intento de choque (agenda t=5620): moto nueva moto_acc10 -> bus149 en 42454301#3
+[  5626] ACCIDENTE ACC_09 (junction): moto_acc10 -> bus149 en :5334360579_0_1 (Redondel Virgen de Bronce), lon/lat -79.008396, -2.911034
+[  5767] Intento de choque (agenda t=5767): moto nueva moto_acc11 -> bus150 en 400017963#0
+[  5774] ACCIDENTE ACC_10 (collision): moto_acc11 -> bus150 en 400017963#0_1 (Avenida Florencia Astudillo), lon/lat -79.002217, -2.905084
+[  8201] Intento de choque (agenda t=8201): moto nueva moto_acc12 -> bus208 en 82898761#0
+[  8208] ACCIDENTE ACC_11 (collision): moto_acc12 -> bus208 en 82898761#0_0 (Panamericana Norte), lon/lat -78.967799, -2.880924
+[  8710] Intento de choque (agenda t=8710): moto nueva moto_acc13 -> bus237 en -301162960#27
+[  8714] ACCIDENTE ACC_12 (collision): moto_acc13 -> bus237 en -301162960#27_0 (Avenida Hurtado de Mendoza), lon/lat -78.981056, -2.888943
+[  8817] Intento de choque (agenda t=8817): moto nueva moto_acc14 -> bus230 en -542537659#11
+[  8824] ACCIDENTE ACC_13 (collision): moto_acc14 -> bus230 en -542537659#11_0 (Avenida 1 de Mayo), lon/lat -79.023483, -2.907496
+[  9724] Intento de choque (agenda t=9724): moto existente moto796 -> bus260 en 40972441#0
+[  9754] Colisión de fondo moto796 (moto) -> moto782 (moto) en 329974471_0: retirados
+[  9754] Intento moto796 -> bus260 abortado (la moto o el bus ya no están disponibles); se reprograma en t=9814
+[  9777] Intento de choque (agenda t=9777): moto nueva moto_acc16 -> bus266 en 311212627#2
+[  9784] ACCIDENTE ACC_14 (collision): moto_acc16 -> bus266 en 311212627#2_0 (Avenida Guapondelig), lon/lat -78.991011, -2.899791
+[  9814] Intento de choque (agenda t=9724): moto nueva moto_acc17 -> bus269 en 397470319#0
+[  9821] ACCIDENTE ACC_15 (collision): moto_acc17 -> bus269 en 397470319#0_0 (Avenida Remigio Crespo Toral), lon/lat -79.017381, -2.898782
+[ 10366] Colisión de fondo car3435 (car) -> car3304 (car) en :8370180733_3_1: retirados
+
+Accidentes bus-moto: 15 (por hora: [5, 5, 5]), en 15 aristas distintas
+Intentos abortados y reprogramados: 2; vehículos retirados por colisiones de fondo: 16
+  ACC_01 t=645 collision 211405705#6        pos= 583.3 (-78.961467, -2.913712) moto_acc01 -> bus11
+  ACC_02 t=764 collision 334968591#0        pos= 103.1 (-78.998024, -2.905264) moto_acc02 -> bus14
+  ACC_03 t=2103 collision 46227734#2         pos= 221.5 (-79.025958, -2.905219) moto_acc03 -> bus57
+  ACC_04 t=2254 junction  -303056611         pos=   0.0 (-78.989816, -2.895558) moto_acc04 -> bus56
+  ACC_05 t=2747 collision 542421943          pos= 254.3 (-78.984944, -2.881834) moto_acc05 -> bus69
+  ACC_06 t=3752 collision 897096371#0        pos=  43.7 (-79.008840, -2.921374) moto_acc06 -> bus88
+  ACC_07 t=4008 collision 45393819#6         pos= 174.8 (-79.023314, -2.917589) moto_acc08 -> bus101
+  ACC_08 t=4445 junction  50365084#0         pos=   1.8 (-78.976770, -2.873698) moto_acc09 -> bus123
+  ACC_09 t=5626 junction  45424962#7         pos=   0.0 (-79.008396, -2.911034) moto_acc10 -> bus149
+  ACC_10 t=5774 collision 400017963#0        pos= 321.1 (-79.002217, -2.905084) moto_acc11 -> bus150
+  ACC_11 t=8208 collision 533558821#0        pos=   0.0 (-78.967799, -2.880924) moto_acc12 -> bus208
+  ACC_12 t=8714 collision -301162960#27      pos= 544.5 (-78.981056, -2.888943) moto_acc13 -> bus237
+  ACC_13 t=8824 collision -542537659#11      pos= 512.2 (-79.023483, -2.907496) moto_acc14 -> bus230
+  ACC_14 t=9784 collision 311212627#2        pos= 162.0 (-78.991011, -2.899791) moto_acc16 -> bus266
+  ACC_15 t=9821 collision 397470319#0        pos= 264.0 (-79.017381, -2.898782) moto_acc17 -> bus269
+
+Teleports totales: 0
+Stock final: {'VCM': ['U02', 'U03'], 'IESS_JCA': ['U04', 'U01'], 'MILITAR': ['U05'], 'MUNI_PAT': ['U06', 'U07', 'U08'], 'MUNI_VALLE': ['U09', 'U10'], 'MONTE_SINAI': [], 'DEL_RIO': []}
+Simulation ended at time: 12600.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 61.51s
+ TraCI-Duration: 14.73s
+ Real time factor: 204.861
+ UPS: 93825.656451
+Vehicles:
+ Inserted: 4787 (Loaded: 4817)
+ Running: 693
+ Waiting: 30
+ Teleports: 0 (Collisions: 23)
+ Emergency Stops: 1
+ Emergency Braking: 29
+Statistics (avg of 4094):
+ RouteLength: 6040.58
+ Speed: 11.78
+ Duration: 517.46
+ WaitingTime: 66.83
+ TimeLoss: 125.28
+ DepartDelay: 0.15
+DijkstraRouter answered 1 queries and explored 496.00 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.00ms on average).
+DijkstraRouter answered 9688 queries and explored 518.83 edges on average.
+DijkstraRouter spent 3.35s answering queries (0.35ms on average).

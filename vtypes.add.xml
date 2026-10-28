@@ -1,0 +1,19 @@
+<additional>
+  <!-- Krauss: tau = tiempo de reacción/seguridad (s), sigma = imperfección del conductor (0..1),
+       accel/decel en m/s². Con step-length 1, tau debe ser >= 1 (si no, choques "naturales"). -->
+  <vType id="car" vClass="passenger" carFollowModel="Krauss"
+         length="5" minGap="2.5" accel="2.6" decel="4.5" sigma="0.5" tau="1.0"
+         color="255,255,0"/>
+
+  <vType id="bus" vClass="bus" carFollowModel="Krauss"
+         length="12" minGap="3" accel="1.2" decel="4.0" sigma="0.3" tau="1.2"
+         maxSpeed="22" color="0,0,255"/>
+
+  <vType id="moto" vClass="motorcycle" carFollowModel="Krauss"
+         length="2.2" minGap="1" accel="3.5" decel="6.0" sigma="0.6" tau="1.0"
+         speedFactor="1.1" color="255,0,255"/>
+
+  <vType id="ambulance" vClass="emergency" guiShape="emergency" carFollowModel="Krauss"
+         length="6.5" minGap="2.5" accel="2.6" decel="4.5" sigma="0.2" tau="1.0"
+         speedFactor="1.3" color="255,255,255"/>
+</additional>

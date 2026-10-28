@@ -1,0 +1,205 @@
+ Retrying in 1 seconds
+***Starting server on port 35387 ***
+Loading net-file from 'cuenca_ciudad.net.xml' ... done (224ms).
+Loading additional-files from 'vtypes.add.xml' ... done (0ms).
+Loading route-files incrementally from 'fondo_car.rou.xml'
+Loading route-files incrementally from 'fondo_bus.rou.xml'
+Loading route-files incrementally from 'fondo_moto.rou.xml'
+Loading done.
+Simulation version 1.28.0 started with time: 0.00.
+Política de retorno: origen
+
+Hospital     Tipo     Arista              Pos (m) Carril Dist (m)  Calle
+VCM          publico  208782596#0           201.7      0     80.9  Avenida del Paraíso
+IESS_JCA     publico  47198324#0            124.9      2    124.2  Circunvalación Sur
+MILITAR      publico  334948974#0           198.3      1      9.2  Avenida 12 de Abril
+MUNI_PAT     publico  378364650#0            88.5      0    135.6  Via Checa Chiquintad
+MUNI_VALLE   publico  -171302162#22          88.2      0      8.3  Camino Viejo
+MONTE_SINAI  privado  269103111#2           139.5      0     38.0  Avenida Fray Vicente Solano
+DEL_RIO      privado  40972441#0              6.5      0    119.5  Avenida de las Américas
+
+Stock inicial de ambulancias:
+  VCM          (publico): 3 -> ['U01', 'U02', 'U03']
+  IESS_JCA     (publico): 1 -> ['U04']
+  MILITAR      (publico): 1 -> ['U05']
+  MUNI_PAT     (publico): 3 -> ['U06', 'U07', 'U08']
+  MUNI_VALLE   (publico): 2 -> ['U09', 'U10']
+  MONTE_SINAI  (privado): 0 -> []
+  DEL_RIO      (privado): 0 -> []
+
+Agenda de accidentes (s): [638, 760, 2099, 2248, 2744, 3714, 3937, 4437, 5620, 5767, 8201, 8710, 8817, 9724, 9777]
+[120] Despacho de prueba U01: VCM -> IESS_JCA, 27 aristas, 5135 m, travelTime estimado 233.4 s
+[352] U01 llegó a IESS_JCA: tiempo real 231 s vs travelTime 233.4 s (diferencia -2 s, retraso de inserción 1 s)
+[   638] Intento de choque (agenda t=638): moto nueva moto_acc01 -> bus11 en 211405705#6
+[   645] ACCIDENTE ACC_01 (collision): moto_acc01 -> bus11 en 211405705#6_0 (Via Monay Baguanchi- Paccha), lon/lat -78.961467, -2.913712
+[   645] ACC_01: DESPACHO U09 desde MUNI_VALLE, ETA 108 s, espera 0 s
+[   731] ACC_01: LLEGADA de U09 (a 42 m), respuesta 86 s (ETA 108 s), total desde el accidente 86 s
+[   760] Intento de choque (agenda t=760): moto nueva moto_acc02 -> bus14 en 334968591#0
+[   764] ACCIDENTE ACC_02 (collision): moto_acc02 -> bus14 en 334968591#0_1 (Calle Larga), lon/lat -78.998028, -2.905263
+[   764] ACC_02: DESPACHO U02 desde VCM, ETA 130 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (123 s)
+[   830] Colisión de fondo bus23 (bus) -> car91 (car) en :413646862_7_0: retirados
+[   851] ACC_01: fin de atención, U09 vuelve a MUNI_VALLE (travelTime 234 s) — mismo hospital
+[   884] ACC_02: LLEGADA de U02 (a 41 m), respuesta 120 s (ETA 130 s), total desde el accidente 120 s
+[  1004] ACC_02: fin de atención, U02 vuelve a VCM (travelTime 189 s) — mismo hospital
+[  1073] ACC_01: U09 llegó a MUNI_VALLE, misión 428 s; cola de MUNI_VALLE: ['U10', 'U09']
+[  1206] ACC_02: U02 llegó a VCM, misión 442 s; cola de VCM: ['U03', 'U02']
+[  1726] Colisión de fondo moto142 (moto) -> car396 (car) en :8370180733_3_1: retirados
+[  2099] Intento de choque (agenda t=2099): moto nueva moto_acc03 -> bus50 en 144175304
+[  2103] ACCIDENTE ACC_03 (collision): moto_acc03 -> bus50 en 552440202_0 (Circunvalación Sur), lon/lat -78.985574, -2.913380
+[  2103] ACC_03: DESPACHO U03 desde VCM, ETA 156 s, espera 0 s
+[  2248] Intento de choque (agenda t=2248): moto nueva moto_acc04 -> bus54 en 894536405
+[  2255] ACCIDENTE ACC_04 (collision): moto_acc04 -> bus54 en 894536405_0 (Avenida Héroes de Verdeloma), lon/lat -79.007566, -2.887810
+[  2255] ACC_04: DESPACHO U05 desde MILITAR, ETA 369 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (366 s)
+[  2266] ACC_03: LLEGADA de U03 (a 47 m), respuesta 163 s (ETA 156 s), total desde el accidente 163 s
+[  2386] ACC_03: fin de atención, U03 vuelve a VCM (travelTime 192 s) — mismo hospital
+[  2557] ACC_04: LLEGADA de U05 (a 37 m), respuesta 302 s (ETA 369 s), total desde el accidente 302 s
+[  2649] ACC_03: U03 llegó a VCM, misión 546 s; cola de VCM: ['U02', 'U03']
+[  2677] ACC_04: fin de atención, U05 vuelve a MILITAR (travelTime 324 s) — mismo hospital
+[  2744] Intento de choque (agenda t=2744): moto nueva moto_acc05 -> bus66 en 42143919
+[  2748] ACCIDENTE ACC_05 (collision): moto_acc05 -> bus66 en 42143919_0 (Calle Larga), lon/lat -79.003779, -2.901999
+[  2748] ACC_05: DESPACHO U10 desde MUNI_VALLE, ETA 574 s, espera 0 s | antes no pudieron: MILITAR sin stock (198 s); MONTE_SINAI sin stock (206 s); VCM rechazo (p_sin) (305 s)
+[  2801] Colisión de fondo car817 (car) -> car932 (car) en :347652056_0_1: retirados
+[  3067] ACC_04: U05 llegó a MILITAR, misión 812 s; cola de MILITAR: ['U05']
+[  3423] ACC_05: LLEGADA de U10 (a 41 m), respuesta 675 s (ETA 574 s), total desde el accidente 675 s
+[  3543] ACC_05: fin de atención, U10 vuelve a MUNI_VALLE (travelTime 453 s) — mismo hospital
+[  3695] ACCIDENTE ACC_06 (junction): moto229 -> bus95 en :413646862_7_0 (Avenida Héroes de Verdeloma), lon/lat -78.996053, -2.891053
+[  3695] ACC_06: DESPACHO U02 desde VCM, ETA 271 s, espera 0 s
+[  3714] Intento de choque (agenda t=3714): moto nueva moto_acc06 -> bus88 en 534903533#2
+[  3752] ACCIDENTE ACC_07 (collision): moto_acc06 -> bus88 en 897096371#0_0 (Camino a Turi), lon/lat -79.008841, -2.921374
+[  3752] ACC_07: DESPACHO U05 desde MILITAR, ETA 324 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (270 s)
+[  3928] ACC_06: LLEGADA de U02 (a 22 m), respuesta 233 s (ETA 271 s), total desde el accidente 233 s
+[  3937] Intento de choque (agenda t=3937): moto nueva moto_acc07 -> bus100 en 894536406
+[  3942] Colisión de fondo moto_acc07 (moto) -> car1182 (car) en 894536406_0: retirados
+[  3942] Intento moto_acc07 -> bus100 abortado (la moto o el bus ya no están disponibles); se reprograma en t=4002
+[  4002] Intento de choque (agenda t=3937): moto nueva moto_acc08 -> bus97 en 82898748#0
+[  4010] ACCIDENTE ACC_08 (collision): moto_acc08 -> bus97 en 42207972_0 (sin nombre), lon/lat -78.965114, -2.889941
+[  4010] ACC_08: DESPACHO U04 desde IESS_JCA, ETA 219 s, espera 0 s | antes no pudieron: DEL_RIO sin stock (161 s)
+[  4048] ACC_06: fin de atención, U02 vuelve a VCM (travelTime 464 s) — mismo hospital
+[  4056] ACC_05: U10 llegó a MUNI_VALLE, misión 1308 s; cola de MUNI_VALLE: ['U09', 'U10']
+[  4093] ACC_07: LLEGADA de U05 (a 48 m), respuesta 341 s (ETA 324 s), total desde el accidente 341 s
+[  4213] ACC_07: fin de atención, U05 vuelve a MILITAR (travelTime 307 s) — mismo hospital
+[  4301] ACC_08: LLEGADA de U04 (detenida en la arista del accidente), respuesta 291 s (ETA 219 s), total desde el accidente 291 s
+[  4421] ACC_08: fin de atención, U04 vuelve a IESS_JCA (travelTime 287 s) — mismo hospital
+[  4437] Intento de choque (agenda t=4437): moto existente moto367 -> bus121 en 249653686#0
+[  4528] Intento moto367 -> bus121 abortado (no lo alcanzó en 90 s); se reprograma en t=4588
+[  4588] Intento de choque (agenda t=4437): moto nueva moto_acc10 -> bus111 en 542406430#0
+[  4590] Intento moto_acc10 -> bus111 abortado (la moto o el bus ya no están disponibles); se reprograma en t=4650
+[  4595] ACC_07: U05 llegó a MILITAR, misión 843 s; cola de MILITAR: ['U05']
+[  4650] Intento de choque (agenda t=4437): moto nueva moto_acc11 -> bus124 en 42207971
+[  4653] ACCIDENTE ACC_09 (collision): moto_acc11 -> bus124 en 42207971_0 (Avenida Francisco Moscoso), lon/lat -79.001104, -2.916006
+[  4653] ACC_09: DESPACHO U05 desde MILITAR, ETA 193 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (127 s)
+[  4779] ACC_06: U02 llegó a VCM, misión 1084 s; cola de VCM: ['U03', 'U02']
+[  4842] ACC_09: LLEGADA de U05 (a 45 m), respuesta 189 s (ETA 193 s), total desde el accidente 189 s
+[  4846] ACC_08: U04 llegó a IESS_JCA, misión 836 s; cola de IESS_JCA: ['U01', 'U04']
+[  4951] Colisión de fondo car1369 (car) -> bus118 (bus) en :639837049_2_0: retirados
+[  4962] ACC_09: fin de atención, U05 vuelve a MILITAR (travelTime 202 s) — mismo hospital
+[  5184] ACC_09: U05 llegó a MILITAR, misión 531 s; cola de MILITAR: ['U05']
+[  5620] Intento de choque (agenda t=5620): moto nueva moto_acc12 -> bus149 en 42454301#3
+[  5626] ACCIDENTE ACC_10 (junction): moto_acc12 -> bus149 en :5334360579_0_1 (Redondel Virgen de Bronce), lon/lat -79.008398, -2.911027
+[  5626] ACC_10: DESPACHO U05 desde MILITAR, ETA 110 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (57 s)
+[  5743] ACC_10: LLEGADA de U05 (a 45 m), respuesta 117 s (ETA 110 s), total desde el accidente 117 s
+[  5767] Intento de choque (agenda t=5767): moto nueva moto_acc13 -> bus156 en 815723563#0
+[  5774] ACCIDENTE ACC_11 (collision): moto_acc13 -> bus156 en 815723563#0_1 (Circunvalación Sur), lon/lat -79.010715, -2.919818
+[  5774] ACC_11: DESPACHO U03 desde VCM, ETA 264 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (140 s); MILITAR sin stock (194 s)
+[  5863] ACC_10: fin de atención, U05 vuelve a MILITAR (travelTime 157 s) — mismo hospital
+[  6070] ACC_10: U05 llegó a MILITAR, misión 444 s; cola de MILITAR: ['U05']
+[  6072] ACC_11: LLEGADA de U03 (a 36 m), respuesta 298 s (ETA 264 s), total desde el accidente 298 s
+[  6192] ACC_11: fin de atención, U03 vuelve a VCM (travelTime 236 s) — mismo hospital
+[  6449] ACC_11: U03 llegó a VCM, misión 675 s; cola de VCM: ['U02', 'U03']
+[  7878] ACCIDENTE ACC_12 (junction): moto651 -> bus184 en :413646862_1_0 (Avenida Héroes de Verdeloma), lon/lat -78.996097, -2.891100
+[  7878] ACC_12: DESPACHO U02 desde VCM, ETA 185 s, espera 0 s
+[  8061] ACC_12: LLEGADA de U02 (a 36 m), respuesta 183 s (ETA 185 s), total desde el accidente 183 s
+[  8181] ACC_12: fin de atención, U02 vuelve a VCM (travelTime 269 s) — mismo hospital
+[  8201] Intento de choque (agenda t=8201): moto nueva moto_acc14 -> bus206 en 400017959
+[  8208] ACCIDENTE ACC_13 (collision): moto_acc14 -> bus206 en 542393800#0_1 (Avenida Remigio Crespo Toral), lon/lat -79.009521, -2.906320
+[  8208] ACC_13: DESPACHO U05 desde MILITAR, ETA 102 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (48 s)
+[  8329] ACC_13: LLEGADA de U05 (a 44 m), respuesta 121 s (ETA 102 s), total desde el accidente 121 s
+[  8449] ACC_13: fin de atención, U05 vuelve a MILITAR (travelTime 242 s) — mismo hospital
+[  8559] ACC_12: U02 llegó a VCM, misión 681 s; cola de VCM: ['U03', 'U02']
+[  8710] Intento de choque (agenda t=8710): moto nueva moto_acc15 -> bus236 en 542406710
+[  8711] ACC_13: U05 llegó a MILITAR, misión 503 s; cola de MILITAR: ['U05']
+[  8717] ACCIDENTE ACC_14 (collision): moto_acc15 -> bus236 en 542406710_0 (Avenida 10 de Agosto), lon/lat -79.013993, -2.909470
+[  8717] ACC_14: DESPACHO U05 desde MILITAR, ETA 183 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (129 s)
+[  8817] Intento de choque (agenda t=8817): moto nueva moto_acc16 -> bus230 en -542537659#11
+[  8824] ACCIDENTE ACC_15 (collision): moto_acc16 -> bus230 en -542537659#11_0 (Avenida 1 de Mayo), lon/lat -79.023435, -2.907507
+[  8824] ACC_15: DESPACHO U03 desde VCM, ETA 290 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (167 s); MILITAR sin stock (220 s)
+[  8931] ACC_14: LLEGADA de U05 (a 42 m), respuesta 214 s (ETA 183 s), total desde el accidente 214 s
+[  9051] ACC_14: fin de atención, U05 vuelve a MILITAR (travelTime 215 s) — mismo hospital
+[  9133] ACC_15: LLEGADA de U03 (a 41 m), respuesta 309 s (ETA 290 s), total desde el accidente 309 s
+[  9253] ACC_15: fin de atención, U03 vuelve a VCM (travelTime 374 s) — mismo hospital
+[  9293] ACC_14: U05 llegó a MILITAR, misión 576 s; cola de MILITAR: ['U05']
+[  9724] Intento de choque (agenda t=9724): moto nueva moto_acc17 -> bus267 en -40668082#9
+[  9731] ACCIDENTE ACC_16 (collision): moto_acc17 -> bus267 en -40668082#9_0 (Gran Colombia), lon/lat -79.023329, -2.891138
+[  9731] ACC_16: DESPACHO U05 desde MILITAR, ETA 197 s, espera 0 s
+[  9769] ACC_15: U03 llegó a VCM, misión 945 s; cola de VCM: ['U02', 'U03']
+[  9777] Intento de choque (agenda t=9777): moto nueva moto_acc18 -> bus269 en 548294140
+[  9784] ACCIDENTE ACC_17 (collision): moto_acc18 -> bus269 en 548294140_1 (Avenida Remigio Crespo Toral), lon/lat -79.021370, -2.897744
+[  9784] ACC_17: DESPACHO U06 desde MUNI_PAT, ETA 454 s, espera 0 s | antes no pudieron: MONTE_SINAI sin stock (195 s); MILITAR sin stock (219 s); VCM rechazo (p_sin) (319 s); DEL_RIO sin stock (446 s)
+[  9924] ACC_16: LLEGADA de U05 (a 39 m), respuesta 193 s (ETA 197 s), total desde el accidente 193 s
+[ 10044] ACC_16: fin de atención, U05 vuelve a MILITAR (travelTime 333 s) — mismo hospital
+[ 10365] Colisión de fondo car3435 (car) -> car3304 (car) en :8370180733_3_1: retirados
+[ 10367] ACC_17: LLEGADA de U06 (a 32 m), respuesta 583 s (ETA 454 s), total desde el accidente 583 s
+[ 10405] ACC_16: U05 llegó a MILITAR, misión 674 s; cola de MILITAR: ['U05']
+[ 10487] ACC_17: fin de atención, U06 vuelve a MUNI_PAT (travelTime 456 s) — mismo hospital
+[ 11143] ACC_17: U06 llegó a MUNI_PAT, misión 1359 s; cola de MUNI_PAT: ['U07', 'U08', 'U06']
+
+Accidentes bus-moto: 17 (por hora: [5, 6, 6]), en 17 aristas distintas
+Intentos abortados y reprogramados: 3; vehículos retirados por colisiones de fondo: 12
+
+Acc     t_acc estado     origen       espera  resp   ETA retorno      misión  llegada
+ACC_01    645 cerrado    MUNI_VALLE        0    86   108 MUNI_VALLE      428  a 42 m
+ACC_02    764 cerrado    VCM               0   120   130 VCM             442  a 41 m
+ACC_03   2103 cerrado    VCM               0   163   156 VCM             546  a 47 m
+ACC_04   2255 cerrado    MILITAR           0   302   369 MILITAR         812  a 37 m
+ACC_05   2748 cerrado    MUNI_VALLE        0   675   574 MUNI_VALLE     1308  a 41 m
+ACC_06   3695 cerrado    VCM               0   233   271 VCM            1084  a 22 m
+ACC_07   3752 cerrado    MILITAR           0   341   324 MILITAR         843  a 48 m
+ACC_08   4010 cerrado    IESS_JCA          0   291   219 IESS_JCA        836  detenida en la arista del accidente
+ACC_09   4653 cerrado    MILITAR           0   189   193 MILITAR         531  a 45 m
+ACC_10   5626 cerrado    MILITAR           0   117   110 MILITAR         444  a 45 m
+ACC_11   5774 cerrado    VCM               0   298   264 VCM             675  a 36 m
+ACC_12   7878 cerrado    VCM               0   183   185 VCM             681  a 36 m
+ACC_13   8208 cerrado    MILITAR           0   121   102 MILITAR         503  a 44 m
+ACC_14   8717 cerrado    MILITAR           0   214   183 MILITAR         576  a 42 m
+ACC_15   8824 cerrado    VCM               0   309   290 VCM             945  a 41 m
+ACC_16   9731 cerrado    MILITAR           0   193   197 MILITAR         674  a 39 m
+ACC_17   9784 cerrado    MUNI_PAT          0   583   454 MUNI_PAT       1359  a 32 m
+
+Retornos a un hospital distinto del de origen: 0 de 17
+
+Hospital     tipo     ini fin desp ret rech sin ocupado(s)   util
+VCM          publico    3   2    6   6    2   0       4373  13.5%
+IESS_JCA     publico    1   2    1   1    0   0        836   7.7%
+MILITAR      publico    1   1    7   7    0   4       4383  40.6%
+MUNI_PAT     publico    3   3    1   1    0   0       1359   4.2%
+MUNI_VALLE   publico    2   2    2   2    0   0       1736   8.0%
+MONTE_SINAI  privado    0   0    0   0    0  11          0    n/a
+DEL_RIO      privado    0   0    0   0    0   2          0    n/a
+
+Teleports totales: 0
+Stock final: {'VCM': ['U02', 'U03'], 'IESS_JCA': ['U01', 'U04'], 'MILITAR': ['U05'], 'MUNI_PAT': ['U07', 'U08', 'U06'], 'MUNI_VALLE': ['U09', 'U10'], 'MONTE_SINAI': [], 'DEL_RIO': []}
+CSV escritos en salida_origen/: accidentes.csv, hospitales.csv, stock.csv
+Simulation ended at time: 12600.00.
+Reason: TraCI requested termination.
+Performance:
+ Duration: 60.43s
+ TraCI-Duration: 14.53s
+ Real time factor: 208.516
+ UPS: 45940.837705
+Vehicles:
+ Inserted: 4835
+ Running: 14
+ Waiting: 0
+ Teleports: 0 (Collisions: 23)
+ Emergency Braking: 28
+Statistics (avg of 4821):
+ RouteLength: 6109.61
+ Speed: 11.42
+ Duration: 569.84
+ WaitingTime: 109.43
+ TimeLoss: 175.52
+ DepartDelay: 0.17
+DijkstraRouter answered 4082 queries and explored 300.86 edges on average.
+DijkstraRouter spent 0.75s answering queries (0.18ms on average).
+DijkstraRouter answered 6781 queries and explored 451.74 edges on average.
+DijkstraRouter spent 2.98s answering queries (0.44ms on average).
